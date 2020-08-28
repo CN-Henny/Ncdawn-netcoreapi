@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ncdawn.CommonService.Class\Ncdawn.CommonService.Class.csproj" />
+    <ProjectReference Include="..\Ncdawn.Core.Utils\Ncdawn.Core.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

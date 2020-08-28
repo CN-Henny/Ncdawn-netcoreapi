@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetLatestRuntimePatch>false</TargetLatestRuntimePatch>
+    <Description>测试swagger实体注释</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ncdawn.feignclient.Model.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ncdawn.Service.CarClean\CarService.cs~RF190b756f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ncdawn.CommonService.Class\Ncdawn.CommonService.Class.csproj" />
+    <ProjectReference Include="..\Ncdawn.EFS\Ncdawn.EFS.csproj" />
+  </ItemGroup>
+
+</Project>

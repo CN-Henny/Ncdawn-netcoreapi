@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetLatestRuntimePatch>false</TargetLatestRuntimePatch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="config\**" />
+    <Compile Remove="MapUtils\**" />
+    <EmbeddedResource Remove="config\**" />
+    <EmbeddedResource Remove="MapUtils\**" />
+    <None Remove="config\**" />
+    <None Remove="MapUtils\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="CacheConfigurationExtensionsstatic.cs" />
+    <Compile Remove="CPlatformConfigurationProvider.cs" />
+    <Compile Remove="CPlatformConfigurationSource.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
+    <PackageReference Include="Pivotal.Discovery.Client" Version="1.1.0" />
+    <PackageReference Include="QRCoder" Version="1.3.5" />
+  </ItemGroup>
+
+</Project>

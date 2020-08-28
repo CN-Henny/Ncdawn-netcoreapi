@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ncdawn.feignclient.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Ncdawn.feignclient.Model.ModelsVm.SysAreaQuery">
+            <summary>
+            用户入参
+            </summary>
+        </member>
+        <member name="T:Ncdawn.feignclient.Model.ModelsVm.SysAreaPost">
+            <summary>
+            默认Post
+            </summary>
+        </member>
+        <member name="T:Ncdawn.feignclient.Model.SupportFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ncdawn.feignclient.Model.SupportFilter.whiteList">
+            <summary>
+            白名单，逗号拼接
+            </summary>
+        </member>
+        <member name="F:Ncdawn.feignclient.Model.SupportFilter.isEnable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="M:Ncdawn.feignclient.Model.SupportFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Ncdawn.feignclient.Model.SupportFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>

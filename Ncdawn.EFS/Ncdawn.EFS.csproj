@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\启梦\源码\NetCore框架\自写\Ncdawn.Service.Account\bin\Debug\netcoreapp2.1\Ncdawn.EFS.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EFSExtend\**" />
+    <EmbeddedResource Remove="EFSExtend\**" />
+    <None Remove="EFSExtend\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Configuration" Version="4.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="Caching.CSRedis" Version="3.0.31" />
+    <PackageReference Include="CSRedisCore" Version="3.0.31" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.8" />
+    <PackageReference Include="Npgsql" Version="4.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ncdawn.CommonService.Class\Ncdawn.CommonService.Class.csproj" />
+    <ProjectReference Include="..\Ncdawn.Core.Common\Ncdawn.Core.Common.csproj" />
+  </ItemGroup>
+
+</Project>

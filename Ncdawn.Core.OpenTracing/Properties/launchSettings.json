@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ncdawn.Core.OpenTracing": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "SkyAPM.Agent.AspNetCore"
+      }
+    }
+  }
+}
